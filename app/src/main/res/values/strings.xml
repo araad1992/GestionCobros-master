@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gestion Cobros</string>
+    <string name="title_principal">Domingo 22 de octubre</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
+    <string name="title_activity_registro">Registro</string>
+    <string name="title_activity_abono">Abono</string>
+    <string name="title_activity_programar">Programar</string>
+</resources>

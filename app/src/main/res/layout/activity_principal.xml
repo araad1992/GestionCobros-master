@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="proyecto.gestioncobros.Principal">
+
+    <pl.rafman.scrollcalendar.ScrollCalendar
+        android:id="@+id/scrollCalendar"
+        android:layout_width="368dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:backgroundColor="@android:color/transparent"
+        app:currentDayBackground="@drawable/scrollcalendar_circle_outline"
+        app:currentDayTextColor="@android:color/darker_gray"
+        app:customFont="fonts/montserrat-light.otf"
+        app:disabledBackgroundColor="@android:color/transparent"
+        app:disabledTextColor="@android:color/darker_gray"
+        app:fontColor="@android:color/black"
+        app:fontSize="18dp"
+        app:selectedBackground="@drawable/scrollcalendar_circle_full"
+        app:selectedBackgroundBeginning="@drawable/scrollcalendar_range_start"
+        app:selectedBackgroundEnd="@drawable/scrollcalendar_range_end"
+        app:selectedBackgroundMiddle="@drawable/scrollcalendar_range_middle"
+        app:selectedTextColor="@android:color/white"
+        app:unavailableBackground="@drawable/scrollcalendar_strikethrough"
+        app:unavailableTextColor="@android:color/darker_gray"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+</android.widget.RelativeLayout>
+
+<!--
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/white">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_height="140px"
+        android:layout_width="fill_parent"
+        android:id="@+id/headerLinearLay1">
+        <ImageView
+            android:id="@+id/avatarImageView1"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="100px"
+            android:layout_width="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/usernameTextView1"
+            android:text="8:00 a.m."
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/avatarImageView1"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/red"></TextView>
+        <TextView
+            android:layout_above="@id/usernameTextView1"
+            android:id="@+id/usernameTextView111"
+            android:text="Cobro"
+            android:paddingLeft="10dp"
+
+            android:layout_toRightOf="@id/avatarImageView1"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="45px"
+            android:textColor="@color/red"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="140px"
+        android:layout_width="fill_parent"
+        android:id="@+id/headerLinearLay2">
+        <ImageView
+            android:id="@+id/avatarImageView2"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="100px"
+            android:layout_width="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/usernameTextView2"
+            android:text="9:30 a.m."
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/avatarImageView2"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/red"></TextView>
+        <TextView
+            android:layout_above="@id/usernameTextView2"
+            android:id="@+id/usernameTextView222"
+            android:text="Cobro"
+            android:paddingLeft="10dp"
+
+            android:layout_toRightOf="@id/avatarImageView2"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="45px"
+            android:textColor="@color/red"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="140px"
+        android:layout_width="fill_parent"
+        android:id="@+id/headerLinearLay3">
+        <ImageView
+            android:id="@+id/avatarImageView3"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="100px"
+            android:layout_width="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/usernameTextView3"
+            android:text="11:00 a.m."
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/avatarImageView3"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/red"></TextView>
+        <TextView
+            android:layout_above="@id/usernameTextView3"
+            android:id="@+id/usernameTextView333"
+            android:text="Cobro"
+            android:paddingLeft="10dp"
+
+            android:layout_toRightOf="@id/avatarImageView3"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="45px"
+            android:textColor="@color/red"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="140px"
+        android:layout_width="fill_parent"
+        android:id="@+id/headerLinearLay4">
+        <ImageView
+            android:id="@+id/avatarImageView4"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="100px"
+            android:layout_width="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/usernameTextView4"
+            android:text="12:00 p.m."
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/avatarImageView4"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/green"></TextView>
+        <TextView
+            android:layout_above="@id/usernameTextView4"
+            android:id="@+id/usernameTextView444"
+            android:text="Abono"
+            android:paddingLeft="10dp"
+
+            android:layout_toRightOf="@id/avatarImageView4"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="45px"
+            android:textColor="@color/green"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="140px"
+        android:layout_width="fill_parent"
+        android:id="@+id/headerLinearLay5">
+        <ImageView
+            android:id="@+id/avatarImageView5"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="100px"
+            android:layout_width="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/usernameTextView5"
+            android:text="1:00 p.m."
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/avatarImageView5"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/green"></TextView>
+        <TextView
+            android:layout_above="@id/usernameTextView5"
+            android:id="@+id/usernameTextView555"
+            android:text="Abono"
+            android:paddingLeft="10dp"
+
+            android:layout_toRightOf="@id/avatarImageView5"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="45px"
+            android:textColor="@color/green"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="140px"
+        android:layout_width="fill_parent"
+        android:id="@+id/headerLinearLay6">
+        <ImageView
+            android:id="@+id/avatarImageView6"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="100px"
+            android:layout_width="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/usernameTextView6"
+            android:text="2:00 p.m."
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/avatarImageView6"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/red"></TextView>
+        <TextView
+            android:layout_above="@id/usernameTextView6"
+            android:id="@+id/usernameTextView666"
+            android:text="Cobro"
+            android:paddingLeft="10dp"
+
+            android:layout_toRightOf="@id/avatarImageView6"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="45px"
+            android:textColor="@color/red"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="140px"
+        android:layout_width="fill_parent"
+        android:id="@+id/headerLinearLay7">
+        <ImageView
+            android:id="@+id/avatarImageView7"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="100px"
+            android:layout_width="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/usernameTextView7"
+            android:text="3:00 p.m."
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/avatarImageView7"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/green"></TextView>
+        <TextView
+            android:layout_above="@id/usernameTextView7"
+            android:id="@+id/usernameTextView777"
+            android:text="Abono"
+            android:paddingLeft="10dp"
+
+            android:layout_toRightOf="@id/avatarImageView7"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="45px"
+            android:textColor="@color/green"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="140px"
+        android:layout_width="fill_parent"
+        android:id="@+id/headerLinearLay8">
+        <ImageView
+            android:id="@+id/avatarImageView8"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="100px"
+            android:layout_width="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/usernameTextView8"
+            android:text="4:00 p.m."
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/avatarImageView8"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/red"></TextView>
+        <TextView
+            android:layout_above="@id/usernameTextView8"
+            android:id="@+id/usernameTextView888"
+            android:text="Cobro"
+            android:paddingLeft="10dp"
+
+            android:layout_toRightOf="@id/avatarImageView8"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="45px"
+            android:textColor="@color/red"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="140px"
+        android:layout_width="fill_parent"
+        android:id="@+id/headerLinearLay9">
+        <ImageView
+            android:id="@+id/avatarImageView9"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="100px"
+            android:layout_width="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/usernameTextView9"
+            android:text="5:00 p.m."
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/avatarImageView9"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/red"></TextView>
+        <TextView
+            android:layout_above="@id/usernameTextView9"
+            android:id="@+id/usernameTextView999"
+            android:text="Cobro"
+            android:paddingLeft="10dp"
+
+            android:layout_toRightOf="@id/avatarImageView9"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="45px"
+            android:textColor="@color/red"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="140px"
+        android:layout_width="fill_parent"
+        android:id="@+id/headerLinearLay0">
+        <ImageView
+            android:id="@+id/avatarImageView0"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="100px"
+            android:layout_width="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/usernameTextView0"
+            android:text="6:30 p.m."
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/avatarImageView0"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/red"></TextView>
+        <TextView
+            android:layout_above="@id/usernameTextView0"
+            android:id="@+id/usernameTextView000"
+            android:text="Cobro"
+            android:paddingLeft="10dp"
+
+            android:layout_toRightOf="@id/avatarImageView0"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="45px"
+            android:textColor="@color/red"></TextView>
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
+-->

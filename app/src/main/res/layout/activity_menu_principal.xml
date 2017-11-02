@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="proyecto.gestioncobros.Principal">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <Button
+        android:id="@+id/btnNuevo"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Nuevo cliente" />
+
+    <Button
+        android:id="@+id/btnAbonar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnNuevo"
+        android:layout_alignLeft="@+id/btnNuevo"
+        android:layout_alignRight="@+id/btnNuevo"
+        android:layout_alignStart="@+id/btnNuevo"
+        android:layout_below="@+id/btnNuevo"
+        android:layout_marginTop="30dp"
+        android:text="Abonar" />
+
+    <Button
+        android:id="@+id/btnProgramar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnNuevo"
+        android:layout_alignLeft="@+id/btnAbonar"
+        android:layout_alignRight="@+id/btnNuevo"
+        android:layout_alignStart="@+id/btnAbonar"
+        android:layout_below="@+id/btnAbonar"
+        android:layout_marginTop="30dp"
+        android:text="Programar" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Menú Principal"
+        android:textSize="20dp" />
+
+</android.widget.RelativeLayout>
